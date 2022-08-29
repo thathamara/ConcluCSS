@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+:root{--hover-claro: rgb(255, 210, 128);
+    --hover-medio:rgb(241, 155, 57);
+    --hover-escuro: rgb(255, 210, 128);
+}
+
+#header{
+    /*position:fixed;*/
+    width: 100vw;
+    height: 64px;
+    margin: 0px;
+    background-color: rgb(255, 210, 128);
+    display: grid;
+    grid-template-areas: 
+    'icone inpu nav';
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+    
+}
+#icone{
+    grid-area: icone;
+    margin-left: 10px;
+    width: 35vw;
+}
+#icone img{
+    height: 32px;
+    width: 32px;
+}
+#inpu{
+    grid-area: inpu;
+    gap: 8px;
+    width: 35vw;
+    height: 64px;
+    position: relative;
+    left: -70px;
+}
+#inpu input{
+    width: 200px;
+    height: 48px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+   
+}
+#inpu button{
+    background-color:rgb(241, 155, 57);
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    border: none;
+    transition: 0.5s;
+    position: relative;
+    top: 10px;
+}
+#inpu button:hover{
+    background-color: var(--hover-escuro);
+    cursor: pointer;
+}
+#nav{
+    grid-area: nav;
+    
+    display: flex;
+    gap: 8px;
+}
+#nav div{
+    background-color:rgb(241, 155, 57);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 38px;
+    height: 38px;
+    border-radius: 4px;
+    transition: 1s;
+    padding-top: 10px;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+#nav div:hover{
+    background-color: var(--hover-escuro);
+}
+#icone{
+    margin-top: 8px;
+    font-family: 'DynaPuff', cursive;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    'conteudo conteudo2 sidebar'
+    'conteudo conteudo3 sidebar'
+    'conteudo conteudo4 sidebar'
+    'conteudo conteudo5 sidebar2';
+}
+.container div{
+    background-color: rgb(255, 255, 255);
+    
+    border-radius: 5px;
+}
+
+
+#conteudo{
+    grid-area: conteudo;
+    width: 400px;
+    height: 890px;
+    display: grid;
+    grid-template-areas:
+    'imgFundo ' 
+    'perfil '
+    'nome'
+    'descricao'
+    'seguidores'
+    'navPerfil ';
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+    gap: 20px;
+}
+
+#imgFundo{
+    grid-area: imgFundo;
+    overflow: hidden;
+    height: 200px;
+}
+
+#perfil{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 135px;
+}
+#nome{
+    grid-area: nome;
+    font-family: 'DynaPuff', cursive;
+    font-size: 30px;
+    height: 60px;
+    position: relative;
+    margin-left: 60px;
+    top: 20px;
+}
+#descricao{
+    grid-area: descricao;
+    font-family: 'DynaPuff', cursive;
+    position: relative;
+    margin-left: 30px;
+   color:  rgb(241, 180, 111);
+}
+#seguidores{
+    grid-area: seguidores;
+    width: 146px;
+    height: 30px;
+    margin-left: 70px;
+    font-family: 'DynaPuff', cursive;
+    display: flex;
+    gap: 100px;
+}
+
+#navPerfil{
+    grid-area: navPerfil ;
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+}
+#navPerfil div{
+    width: 316px;
+    border-radius: 4px;
+    padding: 12px 24px 12px 24px;
+    font-family: 'DynaPuff', cursive;
+    transition: 0.5s;
+}
+#navPerfil div:hover{
+    background-color: var(--hover-claro);
+}
+
+
+#conteudo2{
+    grid-area: conteudo2;
+    width: 502px;
+    height: 152px;
+    gap: 8px;
+    display: flex;
+    overflow-x: scroll;
+    border-radius: 10px ;
+   background-color: rgb(255, 255, 255);
+}
+#conteudo2 div
+{
+    background-color: rgb(255, 210, 128);
+    border-radius: 10px;
+    width: 110px;
+    height: 130px;
+    font-family: 'DynaPuff', cursive;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+#btnStory{
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+#btnStory:hover{
+      background-color: rgb(245, 158, 27);
+      border-radius: 50px;
+}
+
+#mais{
+    position: relative;
+    left: 30px;
+    width: 20px;
+    height: 30px;
+}
+
+#conteudo3{
+    grid-area: conteudo3;
+    width: 502px;
+    height: 181px;
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+    grid-template-areas: 
+    'fotinha0 texto'
+    'incluir incluir'
+    'post post';
+}
+#fotinha0
+{
+    grid-area: fotinha;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 12px;
+    margin-left: 7px;
+    border: solid  rgb(241, 180, 111);
+    padding: 8px 0px 0px 8px;
+}
+#texto
+{
+    grid-area: texto;
+    font-family: 'DynaPuff', cursive;
+    width: 418px;
+    height: 90px;
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+    border: none;
+    border-radius: 4px;
+    top: -40px;
+    left: 70px;
+    position: relative;
+}
+#incluir
+{
+    grid-area: incluir;
+    font-family: 'DynaPuff', cursive;
+    display: flex;
+    gap: 15px;
+    position: relative;
+    top: -30px;
+    left: 10px;
+    width: 100px;
+}
+#incluir div{
+ border-radius: 4px;
+ background-color: rgb(255, 210, 128);
+ transition: 0.5s;
+}
+#incluir div:hover{
+    background-color: var(--hover-medio);
+}
+#post
+{
+    grid-area: post;
+    width: 103px;
+    height: 47px;
+    font-family: 'DynaPuff', cursive;
+    flex-direction: row;
+    border: none;
+    border-radius: 4px;
+    background-color:rgb(241, 155, 57);
+    position: relative;
+    top: -48px;
+    left: 390px;
+}
+#post:hover{
+    background-color: var(--hover-escuro);
+}
+
+
+
+#conteudo4{
+    grid-area: conteudo4;
+    width: 502px;
+    height: 328px;
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+    grid-template-areas: 
+    'ftAmigo nomeAmigo nomeAmigo'
+    'textoAmigo textoAmigo textoAmigo'
+    'btnFeed btnfeed qtdComentario'
+    'fotinha textMenor textMenor';
+}
+
+#ftAmigo{
+    grid-area: ftAmigo;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 2px;
+    margin: 12px 0px 0px 7px;
+    border: solid rgb(241, 180, 111);
+    padding: 8px 0px 0px 8px;
+}
+#nomeAmigo{
+    grid-area: nomeAmigo;
+    width: 200px;
+    height: 48px;
+    top: -50px;
+    left: 70px;
+    position: relative;
+    font-family: 'DynaPuff', cursive;
+}
+#textoAmigo{
+    grid-area: textAmigo;
+    width: 470px;
+    height: 132px;
+    position: relative;
+    font-family: 'DynaPuff', cursive;
+    font-size: 15px;
+    top: -20px;
+    left: 10px;
+}
+#btnFeed{
+    grid-area: btnFeed;
+    width: 160px;
+    height: 20px;
+    display: flex;
+    position: relative;
+    top: -15px;
+    left: 10px;
+    gap: 8px;
+    font-family: 'DynaPuff', cursive;
+    
+}
+#btnFeed div{
+    border-radius: 4px;
+    background-color:  rgb(255, 210, 128);
+    transition: 0.5s;
+}
+#btnFeed div:hover{
+    background-color: var(--hover-medio);
+}
+#qtdComentario{
+    grid-area: qtdComentario;
+    width: 112px;
+    height: 40px;
+    position: relative;
+    top: -40px;
+    left: 300px;
+    font-family: 'DynaPuff', cursive;
+    
+}
+#fotinha{
+    grid-area: fotinha;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -40px;
+    margin-left: 7px;
+    border: solid rgb(241, 180, 111);
+    padding: 8px 0px 0px 8px;
+}
+#textMenor{
+    grid-area: textMenor;
+    width: 418px;
+    height: 48px;
+    position: relative;
+    left: 70px;
+    top: -95px;
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+    border: none;
+}
+
+
+
+#conteudo5{
+    grid-area: conteudo5;
+    width: 502px;
+    height: 455px;
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+    grid-template-areas: 
+    'ftAmigo nomeAmigo nomeAmigo'
+    'textoAmigo2 textoAmigo2 textoAmigo2'
+    'btnFeed btnfeed qtdComentario'
+    'fotinha textMenor textMenor';
+}
+
+#ftAmigo{
+    grid-area: ftAmigo;
+}
+#nomeAmigo{
+    grid-area: nomeAmigo;
+}
+#textoAmigo2{
+    grid-area: textAmigo; 
+    position: relative;
+    top: -20px; 
+}
+#btnFeed{
+    grid-area: btnFeed;;
+
+}
+#qtdComentario{
+    grid-area: qtdComentario;
+
+}
+#fotinha{
+    grid-area: fotinha;
+}
+#textMenor{
+    grid-area: textMenor;
+}
+
+
+#sidebar{
+    grid-area: sidebar;
+    width: 310px;
+    height: 484px;
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+    grid-template-areas: 
+    'txtAdc'
+    'adcAmigo'
+    'adcAmigo'
+    'adcAmigo'
+    'adcAmigo'
+    'adcAmigo'
+    'btnVer'
+    ;
+}
+#txtAdc
+{
+    grid-area: descricao;
+    font-family: 'DynaPuff', cursive;
+    font-size: 30px;
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+}
+#adcAmigo{
+    grid-area: adcAmigo;
+    height: 60px;
+    position: relative;
+    margin-left: 15px;
+    top: 30px;
+    display: flex;
+    gap: 10px;
+    font-family: 'DynaPuff', cursive;
+}
+#btnAdc{
+    position: relative;
+    margin-left: 20px;
+    background-color:rgb(255, 210, 128);
+    height: 22px;
+    width: 22px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+#btnAdc:hover{
+    background-color: var(--hover-medio);
+}
+#btnVer{
+    grid-area: btnVer;
+    width: 269px;
+    height: 48px;
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+    position: relative;
+    margin-left: 20px;
+    top: 30px;
+    background: rgb(241, 155, 57);
+    border-radius: 4px;
+    font-family: 'DynaPuff', cursive;
+    font-size: 16px;
+    border-style: none;
+}
+#btnVer:hover{
+    background-color: var(--hover-escuro);
+}
+
+#sidebar2{
+    grid-area: sidebar2;
+    width: 310px;
+    height: 306px;
+    box-shadow: 0px 0.5px 2px 0.5px rgb(197, 197, 196);
+    position: relative;
+    top: 110px;
+    grid-template-areas: 
+    'txtAdc'
+    'alta'
+    'alta'
+    'alta';
+
+}
+#txtAdc{
+    grid-area: txtAdc;
+}
+#alta
+{
+    grid-area: alta;
+    width: 264px;
+    height: 80px;
+    position: relative;
+    top: 30px;
+    margin-left: 15px;
+    font-family: 'DynaPuff', cursive;
+    font-size: 13px;
+}
+#horas{
+    font-family: 'DynaPuff', cursive;
+    font-size: 13px;
+    color:  rgb(241, 180, 111);
+}
+#btnSubir{
+width: 28px;
+height: 28px;
+left: 1199px;
+top: 565px;
+position: fixed;
+background:rgb(241, 155, 57);
+border-radius: 4px;
+padding: 15px 15px 15px 15px;
+}
+#btnSubir:hover{
+    background-color: var(--hover-escuro);
+}
+
+@media screen and (max-width:992px){
+    #sidebar{
+        display: none;
+    }
+    #inpu button{    
+        position: relative;
+        top: 10px;
+        left: 5px;}
+    
+}
+@media screen and (max-width:576px){
+    #conteudo{
+        display: none;
+    }
+    #conf{
+        display: none;
+    }
+    #inpu button{    
+        position: relative;
+        top: -45px;
+        left: 210px;}
+}
+
+
